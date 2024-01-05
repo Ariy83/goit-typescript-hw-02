@@ -13,8 +13,5 @@ enum DayOfWeek {
 }
 
 const isWeekend = (day: DayOfWeek): boolean => {
-  if (day === DayOfWeek.Sat || DayOfWeek.Sun) {
-    return true;
-  }
-  return false;
+  return day === DayOfWeek.Sat || day === DayOfWeek.Sun;
 };
